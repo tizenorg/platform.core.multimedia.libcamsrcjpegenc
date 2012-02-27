@@ -1,0 +1,24 @@
+Source: libcamsrcjpegenc
+Section: libs
+Priority: extra
+Maintainer: Jeongmo Yang <jm80.yang@samsung.com>, JongHyuk Choi <jhchoi.choi@samsung.com>
+Build-Depends: debhelper (>= 5), autotools-dev, dlog-dev, libglib2.0-dev
+Standards-Version: 3.7.2
+
+Package: libcamsrcjpegenc
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libdlog-0, libglib2.0-0
+Description: camerasrc JPEG encoder library
+ 
+Package: libcamsrcjpegenc-dev
+Section: libdevel
+Architecture: any
+Depends: libcamsrcjpegenc (= ${Source-Version})
+Description: camerasrc JPEG encoder Development library
+
+Package: libcamsrcjpegenc-dbg
+Section: debug
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libcamsrcjpegenc (= ${Source-Version})
+Description: camerasrc JPEG encoder library (unstripped)

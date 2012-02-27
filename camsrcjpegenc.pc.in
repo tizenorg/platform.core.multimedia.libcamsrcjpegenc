@@ -1,0 +1,10 @@
+prefix = @prefix@
+exec_prefix=@exec_prefix@
+libdir = @libdir@
+includedir = @includedir@
+
+Name : camsrcjpegenc
+Description : camerasrc JPEG encoder
+Version : @VERSION@
+Libs : -L${libdir} -lcamsrcjpegenc
+Cflags : -I${includedir}

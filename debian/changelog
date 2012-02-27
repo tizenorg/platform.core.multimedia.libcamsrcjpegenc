@@ -1,0 +1,7 @@
+libcamsrcjpegenc (0.1.2-0) unstable; urgency=low
+
+  * Initial release
+  * Git: pkgs/l/libcamsrcjpegenc
+  * Tag: libcamsrcjpegenc_0.1.2-0
+
+ -- Jeongmo Yang <jm80.yang@samsung.com>  Wed, 07 Dec 2011 12:37:32 +0900
