@@ -1,11 +1,10 @@
 Name:       libcamsrcjpegenc
 Summary:    camerasrc JPEG encoder Development library
 Version:    0.1.2
-Release:    2.12
+Release:    3
 Group:      libdevel
 License:    Apache-2.0
 Source0:    %{name}-%{version}.tar.gz
-Requires:   libcamsrcjpegenc = %{version}-%{release}
 BuildRequires:  pkgconfig(dlog)
 BuildRequires:  pkgconfig(glib-2.0)
 
@@ -25,10 +24,11 @@ camerasrc JPEG encoder Development library
 
 %build
 ./autogen.sh
-%configure
+%configure --disable-static --enable-dlog
 make %{?jobs:-j%jobs}
 
 %install
+rm -rf %{buildroot}
 %make_install
 
 %files
