@@ -1,7 +1,7 @@
 Name:       libcamsrcjpegenc
 Summary:    camerasrc JPEG encoder Development library
-Version:    0.1.2
-Release:    3
+Version:    0.1.4
+Release:    1
 Group:      libdevel
 License:    Apache-2.0
 Source0:    %{name}-%{version}.tar.gz
