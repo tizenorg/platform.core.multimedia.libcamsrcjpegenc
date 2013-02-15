@@ -99,7 +99,7 @@ _encode_jpeg( char *enc_lib_path, jpegenc_internal_info *info, jpegenc_parameter
 
 			if( encode_jpeg_func( enc_param ) )
 			{
-				camsrc_jpegenc_debug( "JPEG encode OK! - size[%d]", ret, enc_param->result_len );
+				camsrc_jpegenc_debug( "JPEG encode OK! - size[%d]", enc_param->result_len );
 				ret = CAMSRC_JPEGENC_ERROR_NONE;
 			}
 			else
@@ -154,6 +154,7 @@ camsrcjpegenc_get_src_fmt( guint32 fourcc, ColorFormatType *src_fmt )
 
 		case MAKE_FOURCC('Y','U','Y','V'):
 		case MAKE_FOURCC('S','U','Y','V'):
+		case MAKE_FOURCC('Y','U','Y','2'):
 			*src_fmt = COLOR_FORMAT_YUYV;
 			camsrc_jpegenc_debug( "YUYV" );
 			break;
