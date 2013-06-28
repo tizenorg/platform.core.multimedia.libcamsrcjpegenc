@@ -5,6 +5,7 @@ Release:    3
 Group:      libdevel
 License:    Apache-2.0
 Source0:    %{name}-%{version}.tar.gz
+Source1001: 	libcamsrcjpegenc.manifest
 BuildRequires:  pkgconfig(dlog)
 BuildRequires:  pkgconfig(glib-2.0)
 
@@ -21,6 +22,7 @@ camerasrc JPEG encoder Development library
 
 %prep
 %setup -q -n %{name}-%{version}
+cp %{SOURCE1001} .
 
 %build
 ./autogen.sh
@@ -34,12 +36,13 @@ cp LICENSE.APLv2 %{buildroot}/usr/share/license/%{name}
 %make_install
 
 %files
-%manifest libcamsrcjpegenc.manifest
+%manifest %{name}.manifest
 %defattr(-,root,root,-)
 %{_libdir}/libcamsrcjpegenc.so.*
 %{_datadir}/license/%{name}
 
 %files devel
+%manifest %{name}.manifest
 %defattr(-,root,root,-)
 %{_libdir}/libcamsrcjpegenc.so
 %{_libdir}/pkgconfig/camsrcjpegenc.pc
