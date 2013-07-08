@@ -1,0 +1,8 @@
+Change-Id: I8978d60f7056ec5b45a89814346c54b576dcc52c
+Code-Review+2: Ryan Ware <ware@linux.intel.com>
+Verified+1: Ryan Ware <ware@linux.intel.com>
+Submitted-by: Ryan Ware <ware@linux.intel.com>
+Submitted-at: Mon, 08 Jul 2013 10:06:48 -0700
+Reviewed-on: https://review.tizen.org/gerrit/4540
+Project: platform/core/multimedia/libcamsrcjpegenc
+Branch: refs/heads/tizen
